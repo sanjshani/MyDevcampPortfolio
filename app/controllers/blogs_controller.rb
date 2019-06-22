@@ -29,10 +29,10 @@ class BlogsController < ApplicationController
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
-        format.json { render :show, status: :created, location: @blog }
+#        format.json { render :show, status: :created, location: @blog }             << line was deleted in earlier tutorial ???
       else
         format.html { render :new }
-        format.json { render json: @blog.errors, status: :unprocessable_entity }
+#        format.json { render json: @blog.errors, status: :unprocessable_entity }    << line was deleted in earlier tutorial ???
       end
     end
   end
