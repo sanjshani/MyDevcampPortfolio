@@ -1,8 +1,15 @@
-<h1>Portfolio Items</h1>
+<h1>Portfolio items</h1>
 
-<% @portfolio_items.each do |portfolio_item| %>
+<% @portfolio_items.each do |portfolio_item| %>			<%# Argument and each element in the argument are IMPORTANT%>		
 	<p><%= portfolio_item.title %></p>
 	<p><%= portfolio_item.subtitle %></p>
 	<p><%= portfolio_item.body %></p>
-	<%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>		
+<%#	<p><%= image_tag portfolio_item.thumb_image % ></p>	 Required an "image_tag" phrase before declaring a image IMPORTANT 
+														Because we are using an "url/image tag" instead of an actual image for thumb_image IMPORTANT!! 													This line will have to be modified to correct the error it created with "creat method >> code below would work %>
+	<p><%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %></p>									
+<%#	Above code: check for thumb_image 1st, and only if it is NOT nil run the 1st portion of the code %>				
 <% end %>
+
+
+
+<%# Anything after has # is a Comments untill closing tag %>
