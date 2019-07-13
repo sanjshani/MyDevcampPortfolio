@@ -1,7 +1,8 @@
 <h1>Create a New Portfolio item</h1>
 
 
-<%= form_with(model: @portfolio_item, local: true) do |form| %>       <%# code copied from views/blogs/new.html.erb!!!
+<%= form_with(model: @portfolio_item, local: true) do |form| %>       
+<%# code copied from views/blogs/new.html.erb!!!
 <%#= form_for(@portfolio_item) do |form| % >                        Tutorial version!!!
 
 Though they are different, Both codes worked in new.html.erb!!! 
@@ -20,6 +21,15 @@ Maybe something to do with Rails version??? %>
     <%= form.label :body %>
     <%= form.text_area :body %>
   </div>
+
+  <ul> 
+    <%= form.fields_for :technologies do |technology_form| %>
+      <li>
+        <%= technology_form.label :name %>
+        <%= technology_form.text_field :name %>
+      </li>
+    <% end %>
+  </ul>
 
   <div class="actions">
     <%= form.submit %>
