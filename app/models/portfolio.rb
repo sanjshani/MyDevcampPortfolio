@@ -11,7 +11,7 @@ class Portfolio < ApplicationRecord
 		where(subtitle: 'Angular')
 	end
 
-	# Scope Method to run db queries << had not yet created a route and a method to use in browser!!
+	# Scope Method to run db queries << had not yet created a route and a method to use this in browser!!
 	scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') }
 
 	after_initialize :set_defaults
