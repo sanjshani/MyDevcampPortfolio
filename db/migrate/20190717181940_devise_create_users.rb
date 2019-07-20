@@ -7,7 +7,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: "" 
 
-      ## Custom fields                                                        New Table!!
+      ## Custom fields                                                        New Table item!!
       t.string :name
 
       ## Recoverable
