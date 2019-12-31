@@ -5,7 +5,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+    @blogs = Blog.special_blogs
     @page_title = "My Portfolio Blog"
   end
 
@@ -71,7 +71,6 @@ class BlogsController < ApplicationController
     elsif @blog.draft? 
       @blog.published!
     end
-
     redirect_to blogs_url, notice: 'Post status has been updated.'
   end
 
