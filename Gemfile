@@ -56,3 +56,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4' 
 gem 'devise', '~> 4.7'			          #Authentication
+
+gem 'bootstrap', '~> 4.4.1'               #Bootstrap
+gem 'jquery-rails'                        #For Bootstrap-JavaScript >> jQuery
+gem 'popper_js', '~> 1.14.5'              #Bootstrap tooltips and popovers depend on popper.js
