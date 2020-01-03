@@ -60,3 +60,5 @@ gem 'devise', '~> 4.7'			          #Authentication
 gem 'bootstrap', '~> 4.4.1'               #Bootstrap
 gem 'jquery-rails'                        #For Bootstrap-JavaScript >> jQuery
 gem 'popper_js', '~> 1.14.5'              #Bootstrap tooltips and popovers depend on popper.js
+
+gem 'sanj_view_tool', git: 'https://github.com/sanjshani/sanj_view_tool-'
