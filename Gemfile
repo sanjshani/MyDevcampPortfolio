@@ -61,4 +61,5 @@ gem 'bootstrap', '~> 4.4.1'               #Bootstrap
 gem 'jquery-rails'                        #For Bootstrap-JavaScript >> jQuery
 gem 'popper_js', '~> 1.14.5'              #Bootstrap tooltips and popovers depend on popper.js
 
-gem 'sanj_view_tool', '~> 0.1.0'
+gem 'sanj_view_tool', '~> 0.1.0'		  #Copyright_generator
+gem 'petergate', '~> 2.0', '>= 2.0.1'	  #Authorization
