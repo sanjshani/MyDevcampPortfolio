@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+    
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <meta name="keywords" content="<%= @seo_keywords %>"/>
@@ -10,16 +13,118 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <!-- Start Nav -->    
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav nav-masthead justify-content-center">
+        <%= link_to "Home", root_path, class: "nav-link active" %>
+        <%= link_to "About", about_me_path, class: "nav-link" %>
+        <%= link_to "Contact", contact_path, class: "nav-link" %>
+        <%= link_to "Blogs", blogs_path, class: "nav-link" %>
+        <%= link_to "Portfolios", portfolios_path, class: "nav-link" %>
+        <%= login_helper "nav-link" %>
+      </nav>
+    </div>   
+    <!-- end Nav  -->
 
-    <%= login_helper %>
+    <!-- Blog header -->
+    <header class="blog-header py-3">
+      <div class="container">
 
-    <%= yield %>
+        <h1 class="blog-post-title">The Bootstrap Blog</h1>
+        <p class="blog-post-meta">An example blog built with Bootstrap </p>
 
-    <%= render "shared/nav", location: 'bottom' %>
+      </div>
+    </header>
+    <!-- end   -->
 
-    <%= source_helper("blogs") %>
+    <!-- Start container and row element -->
+    <div class="container">
+      <div class="row mb-2">  
 
+
+        <main role="main" class="container">
+          <div class="row">
+
+            <div class="col-md-8 blog-main">
+
+              <div class="blog-post">
+
+                <h2 class="blog-post-title">Another blog post</h2>
+                <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+                <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                <blockquote>
+                  <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </blockquote>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+              </div>
+
+              <nav class="blog-pagination">
+                <a class="btn btn-outline-primary" href="#">Older</a>
+                <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+              </nav>
+            </div> <!-- end blog-main --> 
+
+
+
+
+            <%= login_helper %>
+
+            <%= yield %>
+
+            <!-- Start-sidebar -->
+            <aside class="col-md-4 blog-sidebar">
+              <div class="p-4 mb-3 bg-light rounded">
+                <h4 class="font-italic">About</h4>
+                <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              </div>
+
+              <div class="p-4">
+                <h4 class="font-italic">Archives</h4>
+                <ol class="list-unstyled mb-0">
+                  <li><a href="#">March 2014</a></li>
+                  <li><a href="#">February 2014</a></li>
+                  <li><a href="#">January 2014</a></li>
+                  <li><a href="#">December 2013</a></li>
+                  <li><a href="#">November 2013</a></li>
+                  <li><a href="#">October 2013</a></li>
+                  <li><a href="#">September 2013</a></li>
+                  <li><a href="#">August 2013</a></li>
+                  <li><a href="#">July 2013</a></li>
+                  <li><a href="#">June 2013</a></li>
+                  <li><a href="#">May 2013</a></li>
+                  <li><a href="#">April 2013</a></li>
+                </ol>
+              </div>
+
+              <div class="p-4">
+                <h4 class="font-italic">Elsewhere</h4>
+                <ol class="list-unstyled">
+                  <li><a href="#">GitHub</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Facebook</a></li>
+                </ol>
+              </div>
+            </aside>
+            <!-- End sidebar -->
+          </div>
+        </main> <!-- end main/container --> 
+        
+        <!-- Start Footer -->
+        <footer class="blog-footer">
+          <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          <p>
+            <a href="#">Back to top</a>
+          </p>
+        </footer>
+        <!-- end Footer  -->
+
+        <%= render "shared/nav", location: 'bottom' %>
+
+        <%= source_helper("blogs") %>
+      </div>        <!-- End row -->
+    </div>          <!-- End container -->      
   </body>
 </html>
