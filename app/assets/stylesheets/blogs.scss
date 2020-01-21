@@ -5,8 +5,8 @@
 /* stylelint-disable selector-list-comma-newline-after */
 
 .blog-header {
-  line-height: 1;
-  border-bottom: 1px solid #e5e5e5;
+  line-height: 1;           
+/*  border-bottom: 1px solid #e5e5e5;  << this line creates a bottom-border << Style removed */
 }
 
 .blog-header-logo {
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   height: 2.75rem;
   overflow-y: hidden;
-  background: #4287f5;                   /* Added background color to nav-scroller*/
+  background: #4287f5;                   /* Added background color to nav-scroller*/  
 }
 
 .nav-scroller .nav {

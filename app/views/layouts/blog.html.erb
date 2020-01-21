@@ -19,47 +19,18 @@
     <header class="blog-header py-3">
       <div class="container">
 
-        <h1 class="blog-post-title">The Bootstrap Blog</h1>
+        <h1 class="blog-post-title">My Blog</h1>
         <p class="blog-post-meta">An example blog built with Bootstrap </p>
-
-      </div>
+        <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin)%>
+      </div>      
     </header>
-    <!-- end   -->
+    <!-- end   -->    
 
     <!-- Start container and row element -->
     <div class="container">
       <div class="row mb-2">  
-
-
-        <main role="main" class="container">
+        <main role="main" class="container"> <!-- end blog-main --> 
           <div class="row">
-
-            <div class="col-md-8 blog-main">
-
-              <div class="blog-post">
-
-                <h2 class="blog-post-title">Another blog post</h2>
-                <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
-
-                <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-                <blockquote>
-                  <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </blockquote>
-                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-
-              </div>
-
-              <nav class="blog-pagination">
-                <a class="btn btn-outline-primary" href="#">Older</a>
-                <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-              </nav>
-            </div> <!-- end blog-main --> 
-
-
-
-
-            <%= login_helper %>
 
             <%= yield %>
 
@@ -96,24 +67,21 @@
                   <li><a href="#">Facebook</a></li>
                 </ol>
               </div>
-            </aside>
-            <!-- End sidebar -->
+            </aside>     <!-- End sidebar -->            
           </div>
-        </main> <!-- end main/container --> 
+        </main>          <!-- end main/container --> 
+      </div>             <!-- End row mb-2-->
 
-        <!-- Start Footer -->
-        <footer class="blog-footer">
-          <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-          <p>
-            <a href="#">Back to top</a>
-          </p>
-        </footer>
-        <!-- end Footer  -->
+      <!-- Start Footer -->
+      <footer class="blog-footer">
+        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        <p>
+          <a href="#">Back to top</a>
+        </p>
+      </footer>
+      <!-- end Footer  -->
 
-        <%= render "shared/nav", location: 'bottom' %>
-
-        <%= source_helper("blogs") %>
-      </div>        <!-- End row -->
+      <%= source_helper("blogs") %>      
     </div>          <!-- End container -->      
   </body>
 </html>
