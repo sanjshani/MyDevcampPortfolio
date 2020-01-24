@@ -55,11 +55,13 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4' 
-gem 'devise', '~> 4.7'			          #Authentication
+gem 'devise', '~> 4.7'			                    #Authentication
 
-gem 'bootstrap', '~> 4.4.1'               #Bootstrap
-gem 'jquery-rails'                        #For Bootstrap-JavaScript >> jQuery
-gem 'popper_js', '~> 1.14.5'              #Bootstrap tooltips and popovers depend on popper.js
+gem 'bootstrap', '~> 4.4.1'                         #Bootstrap
+gem 'jquery-rails'                                  #For Bootstrap-JavaScript >> jQuery
+gem 'popper_js', '~> 1.14.5'                        #Bootstrap tooltips and popovers depend on popper.js
 
-gem 'sanj_view_tool', '~> 0.1.0'		  #Copyright_generator
-gem 'petergate', '~> 2.0', '>= 2.0.1'	  #Authorization
+gem 'sanj_view_tool', '~> 0.1.0'		            #Copyright_generator
+gem 'petergate', '~> 2.0', '>= 2.0.1'	            #Authorization
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'    #Blogs layout/sidebar
+gem 'kaminari', '~> 1.1', '>= 1.1.1'				#Pagination
