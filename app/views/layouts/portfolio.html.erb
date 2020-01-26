@@ -12,15 +12,15 @@
   </head>
 
   <body>    
-    <%= render "shared/portfolio_nav" %>                              <!-- Navbar -->
+    <%= render "shared/portfolio_nav" %>                                                 <!-- Navbar -->
 
     <main role="main">    
-      <%= render "shared/portfolio_header" %>                         <!-- Header/Jumbotron -->
+      <%= render "shared/portfolio_header" unless logged_in?(:site_admin) %>          <!-- Header/Jumbotron -->
 
       <%= yield %>
     </main>
 
-    <%= render "shared/portfolio_footer" %>                           <!-- Footer -->
+    <%= render "shared/portfolio_footer" %>                                              <!-- Footer -->
     <%= source_helper("application") %>
 
   </body>
