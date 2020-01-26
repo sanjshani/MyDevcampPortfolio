@@ -18,22 +18,22 @@
   
 
    
-    <div class="container">                       <!-- Start container wrapper element -->
+    <div class="container">                  <!-- Start container wrapper element -->
       <div class="row mb-2">                      <!-- Start row md-2 element (12) -->
-        <main role="main" class="container">      <!-- start main/container --> 
+        <main role="main" class="container">              <!-- start main/container >> wrapping style ONLY--> 
           <div class="row">
 
-            <%= yield %>
+            <%= yield %>                                          <!-- index.html.erb (8)-->  
 
-            <%= render "shared/blog_sidebar" %>                   <!-- Sidebar -->            
+            <%= render "shared/blog_sidebar" %>                   <!-- Sidebar (4)-->            
           
           </div>
-        </main>                                   <!-- end main/container --> 
+        </main>                                           <!-- end main/container --> 
       </div>                                      <!-- End row mb-2-->
 
       <%= render "shared/blog_footer" %>                            <!-- Footer -->
 
       <%= source_helper("blogs") %>      
-    </div>                                          <!-- End container wrapper element -->      
+    </div>                                    <!-- End container wrapper element -->      
   </body>
 </html>
