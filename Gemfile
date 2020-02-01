@@ -65,3 +65,4 @@ gem 'sanj_view_tool', '~> 0.1.0'		            #Copyright_generator
 gem 'petergate', '~> 2.0', '>= 2.0.1'	            #Authorization
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'    #Blogs layout/sidebar
 gem 'kaminari', '~> 1.1', '>= 1.1.1'				#Pagination
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'			#Portfolio "Drag n' Drop" feature

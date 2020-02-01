@@ -11,6 +11,11 @@ class Portfolio < ApplicationRecord
 		where(subtitle: 'Angular')
 	end
 
+	#Scope for portfolio_item "position" for index view
+	def self.by_position
+		order("position ASC")
+	end
+
 	# Scope Method to run db queries << had not yet created a route and a method to use this in browser!!
 	scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') }
 
