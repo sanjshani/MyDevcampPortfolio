@@ -66,3 +66,7 @@ gem 'petergate', '~> 2.0', '>= 2.0.1'	            #Authorization
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'    #Blogs layout/sidebar
 gem 'kaminari', '~> 1.1', '>= 1.1.1'				#Pagination
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'			#Portfolio "Drag n' Drop" feature
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'			#Image uploader/Secure Credentials
+gem 'carrierwave', '~> 2.0', '>= 2.0.2'				#Core Image uploader
+gem 'carrierwave-aws', '~> 1.4'						#aws-sdk for s3
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'			#Image upload via minimum memory uses
