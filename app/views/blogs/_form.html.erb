@@ -12,16 +12,14 @@
   <% end %>
 
   <div class="form-group">
-    <%= form.label :title %>
-    <%= form.text_field :title, class: "form-control" %>
+    <%= form.text_field :title, class: "form-control", placeholder: 'Title' %>
   </div>
 
   <div class="form-group">
-    <%= form.label :body %>
-    <%= form.text_area :body, class: "form-control", rows: 10 %>      <!--"rows" element would enlarge the text_area-->
+    <%= form.text_area :body, class: "form-control", rows: 10, placeholder: 'Content' %>      <!--"rows" element would enlarge the text_area-->
   </div>
 
   <div class="form-group">
-    <%= form.submit "Submit", class: "btn btn-primary" %>             <!--add "Submit" argument before class-->
+    <%= form.submit "Submit", class: "btn btn-primary btn-block" %>             <!--add "Submit" argument before class-->
   </div>
 <% end %>
