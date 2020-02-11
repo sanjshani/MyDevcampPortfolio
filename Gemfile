@@ -70,3 +70,4 @@ gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'			#Image uploader/Secure Credentials
 gem 'carrierwave', '~> 2.0', '>= 2.0.2'				#Core Image uploader
 gem 'carrierwave-aws', '~> 1.4'						#aws-sdk for s3
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'			#Image upload via minimum memory uses
+gem 'cocoon', '~> 1.2', '>= 1.2.14'					#Nested forms
