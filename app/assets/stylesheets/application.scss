@@ -41,7 +41,7 @@ body {
 }
 
 .cover-container {
-  max-width: 55em;
+  max-width: 60em;
 }
 
 
@@ -134,7 +134,6 @@ body {
     width: 22rem;
     margin: auto;
     float: none;
-
  }
 
 .app-nav span {
@@ -160,3 +159,16 @@ body {
 .app-footer{
   color: white;
 }
+
+.tech-news {
+  color: black;
+  margin: 20px;  
+}
+
+.tech-news a {                      /* Only to style <a> Tag element, which is brought in here by eRuby in this case*/
+  color: blue; 
+}
+
+ .tech-news > .card {               /* Override Only the Card element for tech-news*/
+    padding: 30px;
+ }
