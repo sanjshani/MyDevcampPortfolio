@@ -73,3 +73,4 @@ gem 'mini_magick', '~> 4.10', '>= 4.10.1'			#Image upload via minimum memory use
 gem 'cocoon', '~> 1.2', '>= 1.2.14'					#Nested forms >> jQuery
 gem 'gritter', '~> 1.2'                             #Notification/Validation >> jQuery
 gem 'twitter', '~> 6.2'								#A Ruby interface to the Twitter API
+gem 'redis', '~> 4.1', '>= 4.1.3'					#ActionCable
