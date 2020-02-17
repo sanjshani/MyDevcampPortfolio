@@ -7,4 +7,10 @@
   <p>
   	<%= @blog.body %>
   </p>
+
+  <%= render 'comments/comment_form' %>								<!-- For input new comments (from) -->
+
+  <div id="comments" data-blog-id="<%= @blog.id %>">          <!--id="comment" communicate with channels/blogs.coffee -->
+  	<%= render @blog.comments %>                                    <!-- Display Already made comments-->
+  </div>
 </div> 
