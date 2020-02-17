@@ -6,8 +6,14 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.page(params[:page]).per(5)
-    @page_title = "My Portfolio Blog"
+    if logged_in?(:site_admin)
+      @blogs = Blog.recent.page(params[:page]).per(5)
+    else
+      @blogs = Blog.recent.published.page(params[:page]).per(5)
+    end
+
+    @page_title = "My Portfolio Blog"                                   ## instant variable for url
+
   end
 
   # GET /blogs/1
@@ -16,7 +22,7 @@ class BlogsController < ApplicationController
     @blog = Blog.includes(:comments).friendly.find(params[:id])
     @comment = Comment.new
     
-    @page_title = @blog.title
+    @page_title = @blog.title                                            ## instant variable for url
     @seo_keywords = @blog.body
   end
 
