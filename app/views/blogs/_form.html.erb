@@ -21,8 +21,16 @@
     %>
   </div>
 
+  <div class="form-group">                                                      <!--radio buttons for topics -->
+    <%= form.radio_button :status, 'draft' %>
+    <%= form.label :status, 'Draft' %>
+
+    <%= form.radio_button :status, 'published' %>
+    <%= form.label :status, 'Published' %>
+  </div> 
+
   <div class="form-group">
-    <%= form.text_area :body, class: "form-control", rows: 10, placeholder: 'Content' %>      <!--"rows" element would enlarge the text_area-->
+    <%= form.text_area :body, class: "form-control", rows: 10, placeholder: 'Content' %>      <!--enlarge textarea with "rows" -->
   </div>
 
   <div class="form-group">
