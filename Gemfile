@@ -74,3 +74,5 @@ gem 'cocoon', '~> 1.2', '>= 1.2.14'					#Nested forms >> jQuery
 gem 'gritter', '~> 1.2'                             #Notification/Validation >> jQuery
 gem 'twitter', '~> 6.2'								#A Ruby interface to the Twitter API
 gem 'redis', '~> 4.1', '>= 4.1.3'					#ActionCable
+gem 'redcarpet', '~> 3.5'							#Markdown
+gem 'coderay', '~> 1.1', '>= 1.1.2'                 #Syntax highlighting for selected languages, written in Ruby. 
