@@ -108,6 +108,9 @@ body {
 }
 
 
+/* ----------------------------------------------- */
+
+
 /*
  * Custom Styles
  */
@@ -169,6 +172,23 @@ body {
   color: blue; 
 }
 
- .tech-news > .card {               /* Override Only the Card element for tech-news*/
-    padding: 30px;
- }
+.tech-news > .card {               /* Override Only the Card element for tech-news*/
+  padding: 30px;
+}
+
+.app-card-container {
+  color: black; 
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
+
+.app-card-container a {
+  color: blue; 
+}
