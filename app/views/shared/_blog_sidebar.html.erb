@@ -4,6 +4,15 @@
     <p class="mb-0">You can find <em>Sanjaya's Portfolio</em> in the following social media links.</p>
   </div>
 
+  <%= source_helper("alert alert-primary blog-sidebar-source") %>
+
+  <div class="p-4">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+
   <div class="p-4">
     <h4 class="font-italic">Elsewhere</h4>
     <ol class="list-unstyled social-links">
@@ -13,4 +22,4 @@
       <li><a href="#"><%= fa_icon "facebook" %></a></li>
     </ol>
   </div>
-</aside>     
+</aside> 

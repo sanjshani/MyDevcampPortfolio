@@ -2,6 +2,22 @@
 @import "jquery-ui";
 @import "gritter";
 
+@font-face{                                       /* The entire section was added after local fonts */
+  font-family: 'Lato', ; 
+  src:font-url('Lato-Regular.ttf')
+}
+
+@font-face{                                       /* The entire section was added after local fonts */
+  font-family: 'Roboto Slab', ; 
+  src:font-url('RobotoSlab-Regular.ttf')
+}
+
+html,                                             /* The entire section was added new for Custom Fonts */
+body {
+  height: 100%;
+  font-family: 'Lato', ;                                
+}
+
 .jumbotron {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -25,6 +41,15 @@
 
 .jumbotron .container {
   max-width: 40rem;
+}
+
+h1, .h1,                                                /* The entire section was added new for Custom Fonts */
+h2, ,h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', ;
 }
 
 footer {

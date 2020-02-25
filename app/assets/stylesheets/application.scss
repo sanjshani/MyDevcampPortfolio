@@ -30,6 +30,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Lato', ;                                /* Added new for Custom Fonts */
 }
 
 body {
@@ -44,6 +45,14 @@ body {
   max-width: 60em;
 }
 
+h1, .h1,                                                /* The element was added new for Custom Fonts */
+h2, ,h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', ;
+}
 
 /*
  * Header
@@ -108,6 +117,9 @@ body {
 }
 
 
+/* ----------------------------------------------- */
+
+
 /*
  * Custom Styles
  */
@@ -169,6 +181,33 @@ body {
   color: blue; 
 }
 
- .tech-news > .card {               /* Override Only the Card element for tech-news*/
-    padding: 30px;
- }
+.tech-news > .card {               /* Override Only the Card element for tech-news*/
+  padding: 30px;
+}
+
+.app-card-container {
+  color: black; 
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
+
+.app-card-container a {
+  color: blue; 
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
