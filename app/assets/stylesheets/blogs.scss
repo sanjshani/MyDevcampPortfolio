@@ -4,6 +4,13 @@
 
 /* stylelint-disable selector-list-comma-newline-after */
 
+
+html,                                             /* The entire section is added new for Custom Fonts */
+body {
+  height: 100%;
+  font-family: 'Lato', ;                                
+}
+
 .blog-header {
   line-height: 1;           
 /*  border-bottom: 1px solid #e5e5e5;  << this line creates a bottom-border << Style removed */
@@ -19,7 +26,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: 'Roboto Slab', ;                          /* Replaced the default fonts */
 }
 
 .display-4 {
@@ -112,6 +119,9 @@ h1, h2, h3, h4, h5, h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+
+/* ----------------------------------------------- */
 
 /* 
  * Custom Styles 

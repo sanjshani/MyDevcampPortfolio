@@ -30,6 +30,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Lato', ;                                /* Added new for Custom Fonts */
 }
 
 body {
@@ -44,6 +45,14 @@ body {
   max-width: 60em;
 }
 
+h1, .h1,                                                /* The element was added new for Custom Fonts */
+h2, ,h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', ;
+}
 
 /*
  * Header
