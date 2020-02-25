@@ -4,7 +4,26 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "Profile.jpg", width: 250, alt: "Profile image", class: "profile-img" %>
+        
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4> 
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>% "
+                >
+                </div>
+              </div>              
+            </div>         
+          <% end %>
+        </div>      
       </div>
+
       <div class="col-md-8">
         <p class="lead">I'm a self tought developer with over an year of experience in Ruby on Rails Programming. So far in my journey I have build two complete Rails applications with a vast array of functionality and deployed a RubyGem that has been downloaded more than 250 times. I'm comfortable incorporating RubyGems as well as styling with Bootstrap 4.4. </p> 
         <p class="lead">I'm interested in further my carreer in developing and I am planning to  expand my knowlege in PHP as well as in Python. My schedule is very flexible and I am looking forward to assit you in any capacity to fullfill your developing needs </p>
